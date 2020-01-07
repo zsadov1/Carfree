@@ -8,7 +8,7 @@ So that I don't get rained on.
 
 ## Usage 
 
-Users are asked to give their current location, after which they will enter their desired destination.  Carfree with show them a polyline for walking directions and travel time.  It also lets you know the age old question "Is it gone rain?" 
+Users are asked to give their current location, after which they will enter their desired destination.  Carfree will show them a polyline for walking directions and display travel time to the left of the map.  Our service also answers the age old question "Is it gone rain?" 
 
 ## Gen 2 Options
 
