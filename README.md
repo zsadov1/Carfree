@@ -6,7 +6,7 @@ As a person without a car
 I want to know if it is going to rain on my walk
 So that I don't get rained on. 
 
-![Carfree Dashboard](/Carfree.png)
+![Carfree Dashboard](Images/Carfree.png)
 
 
 
