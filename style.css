@@ -1,0 +1,23 @@
+#skyline {
+    height: 400px;
+    background-image: url(https://images.pexels.com/photos/237325/pexels-photo-237325.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#pageTitle {
+    font-size: 90px;
+    color: white;
+}
+
+#pageIntro {
+    color: white;
+    font-size: 35px;
+}
+
+#mapDisplay {
+    width: 100%;
+    height: 335px;
+}
