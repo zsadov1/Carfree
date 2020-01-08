@@ -1,4 +1,4 @@
-// Created the map and map settings to be displayed on the page.
+// Created the map and map settings(styles and map starting point) to be displayed on the page.
   
 var map, marker;
 var options = {
@@ -116,11 +116,9 @@ var options = {
     ]
 };
 
+// Created a function to handle Map creation 
+
 function createMap(){
-
-
-
-// stuck here....
 
   map = new google.maps.Map(document.getElementById("mapDisplay"), options); 
 
@@ -132,39 +130,42 @@ function createMap(){
     searchBox.setBounds(map.getBounds());
   });
 
+// !!--This code was first created to change to the destination entere, The code doesn't really influence the functinoality, so I commented it out.
 
-  var markers = [];
+  // var markers = [];
    
-  searchBox.addListener('places_changed' , function(){
-    var places = seachbox.getPlaces();
+  // searchBox.addListener('places_changed' , function(){
+  //   var places = seachbox.getPlaces();
 
-    if (places.length === 0) 
-      return;
+  //   if (places.length === 0) 
+  //     return;
 
-  markers.forEach(function(m) { m.setMap(null); });
-  markers = [];
+  // markers.forEach(function(m) { m.setMap(null); });
+  // markers = [];
 
-  var bounds = new google.maps.LatLngBounds();
+  // var bounds = new google.maps.LatLngBounds();
 
-  places.forEach(function (p) {
-    if (lp.geometery)
-      return;
+  // places.forEach(function (p) {
+  //   if (lp.geometery)
+  //     return;
 
-    markers.push(new google.maps.Marker({
-      map: map,
-      title: p.name,
-      position: p.geometery.location 
-    }));
+  //   markers.push(new google.maps.Marker({
+  //     map: map,
+  //     title: p.name,
+  //     position: p.geometery.location 
+  //   }));
 
-    if (p.geometery.viewport)
-      bounds.union(p.geometery.viewport);
-    else
-      bounds.extend(p.geometery.location);
-  });
-  map.fitBounds(bounds);
-  })
+  //   if (p.geometery.viewport)
+  //     bounds.union(p.geometery.viewport);
+  //   else
+  //     bounds.extend(p.geometery.location);
+  // });
+  // map.fitBounds(bounds);
+  // })
 
-// Getting current location info.
+// Getting current location info, and displays a marker of the user current location
+
+
   infoWindow = new google.maps.InfoWindow;
 
   if (navigator.geolocation) {
@@ -184,6 +185,9 @@ function createMap(){
   }
 }
 
+// This function handles a location error.
+
+
 function handleLocationError (content, position){
 infoWindow.setPosition(position);
 infoWindow.setContent(content);
@@ -194,9 +198,9 @@ google.maps.event.addListener(map, 'click', function(event) {
 placeMarker(event.latLng);
 });
 
-function handleBtnClick(){
+// This function handles what happens when the button is clicked.  It renders the polyline for directions and marks the current time and the travel time.  
 
-  
+function handleBtnClick(){
 
 var directionsRenderer = new google.maps.DirectionsRenderer();
 
@@ -205,7 +209,7 @@ directionsRenderer.setMap(map);
 
 var destination = document.getElementById('inputDestination').value;
 var directionObject = {
-  origin: currentPlace,
+  origin: "Robins School of Business",
   destination: destination,
   travelMode: "WALKING",
 }
@@ -224,6 +228,8 @@ directionsService.route(directionObject, function(result, status) {
   }
   }
   );
+
+  // This API call handles the weather data,  It will ask the user for current location information again.  We couldn't figure out how to have one location grab for both API calls.
   
 let rainChance = document.querySelector('#rain-chance');
 
