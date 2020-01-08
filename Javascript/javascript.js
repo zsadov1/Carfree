@@ -196,6 +196,7 @@ placeMarker(event.latLng);
 
 function handleBtnClick(){
 
+  
 
 var directionsRenderer = new google.maps.DirectionsRenderer();
 
@@ -204,7 +205,7 @@ directionsRenderer.setMap(map);
 
 var destination = document.getElementById('inputDestination').value;
 var directionObject = {
-  origin: "short pump town center",
+  origin: currentPlace,
   destination: destination,
   travelMode: "WALKING",
 }
