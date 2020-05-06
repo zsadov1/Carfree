@@ -118,7 +118,7 @@ var options = {
 
 // Created a function to handle Map creation
 
-function createMap() {
+async function createMap() {
 	var map = new google.maps.Map(document.getElementById("mapDisplay"), options);
 
 	var destinationInput = document.getElementById("inputDestination");
