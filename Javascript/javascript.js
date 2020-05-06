@@ -159,8 +159,6 @@ function createMap() {
 	}
 }
 
-console.log(position);
-
 // This function handles what happens when the button is clicked.  It renders the polyline for directions and marks the current time and the travel time.
 
 function handleBtnClick() {
