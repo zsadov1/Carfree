@@ -1,29 +1,28 @@
 ## Description
 
-Carfree is a hyper-minimalist interface to provide the most concise answer to one of life’s most commonly asked and urgent questions: "Is it gone rain?" 
+Carfree is a hyper-minimalist interface to provide the most concise answer to one of life’s most commonly asked and urgent questions: "Is it gone rain?"
 
-As a person without a car 
+As a person without a car
 I want to know if it is going to rain on my walk
-So that I don't get rained on. 
+So that I don't get rained on.
 
-![Carfree Dashboard](Images/Carfree.png)
+![Carfree Dashboard](Images/carfree.gif)
 
+## Usage
 
-
-## Usage 
-
-Users are asked to give their current location, after which they will enter their desired destination.  Carfree will show them a polyline for walking directions and display travel time to the left of the map.  Our service also answers the age old question "Is it gone rain?" 
+Users are asked to give their current location, after which they will enter their desired destination. Carfree will show them a polyline for walking directions and display travel time to the left of the map. Our service also answers the age old question "Is it gone rain?"
 
 ## Gen 2 Options
 
-At Carfree we would like to add a number of different features like biking and transit functionality, as will as ride share API intergration.  
+At Carfree we would like to add a number of different features like biking and transit functionality, as will as ride share API intergration.
 
 ## Credits
 
 skyline.jpg by unknown downloaded at https://images.pexels.com/photos/237325
 
 ## License
-Copyright (c) 2019 Zachary Sadovszky, Mary Kate White, Jeffery Durante 
+
+Copyright (c) 2019 Zachary Sadovszky, Mary Kate White, Jeffery Durante
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
